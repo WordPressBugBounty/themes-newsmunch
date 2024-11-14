@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   NewsMunch
 Text Domain: 	   newsmunch
-Version:            1.0.31
+Version:            1.0.32
 Tested up to:       6.6
 Requires at least:  4.7
 Requires PHP:       7.0
@@ -157,4 +157,8 @@ table.wc-block-cart-items .wc-block-components-product-price {
 
 .widget .wc-block-grid__products a:before {
     display: none;
+}
+
+table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantity .wc-block-cart-item__remove-link {
+    font-size: 1rem !important;
 }
