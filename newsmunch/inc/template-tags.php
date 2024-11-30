@@ -24,7 +24,7 @@ function newsmunch_theme_page_header_title(){
 		  printf( esc_html__( '%1$s %2$s', 'newsmunch' ), esc_html__('Archives','newsmunch'), get_the_date( 'Y' ) );
 		elseif( is_author() ):
 		/* translators: %1$s %2$s: author */	
-			printf( esc_html__( '%1$s %2$s', 'newsmunch' ), esc_html__('All posts by','newsmunch'), get_the_author() );
+			printf( esc_html__( '%1$s %2$s', 'newsmunch' ), esc_html__('All posts by','newsmunch'), esc_html(get_the_author()) );
         elseif( is_category() ):
 		/* translators: %1$s %2$s: category */	
 			printf( esc_html__( '%1$s %2$s', 'newsmunch' ), esc_html__('Category','newsmunch'), single_cat_title( '', false ) );

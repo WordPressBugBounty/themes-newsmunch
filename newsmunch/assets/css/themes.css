@@ -9250,6 +9250,13 @@ main {
     background-color: #f5f5f5;
 }
 
+.post-single .about-author:after,
+.post-single .about-author:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Post Navigation */
 
 .post-single .navigation.post-navigation .nav-links {

@@ -35,7 +35,7 @@ $newsmunch_hs_you_missed_pf			= get_theme_mod('newsmunch_hs_you_missed_pf','1');
 								<?php if($newsmunch_hs_you_missed_title=='1'): newsmunch_common_post_title('h4','post-title'); endif; ?>
 								<ul class="meta list-inline dt-mt-0 dt-mb-0">
 									<?php if($newsmunch_hs_you_missed_auth_meta=='1'): ?>
-										<li class="list-inline-item"><i class="far fa-user-circle"></i> <?php esc_html_e('By','newsmunch');?> <a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) ));?>"><?php esc_html(the_author()); ?></a></li>
+										<li class="list-inline-item"><i class="far fa-user-circle"></i> <?php esc_html_e('By','newsmunch');?> <a href="<?php echo esc_url(get_author_posts_url( absint(get_the_author_meta( 'ID' )) ));?>"><?php echo esc_html(get_the_author()); ?></a></li>
 									<?php endif; ?>	
 									
 									<?php if($newsmunch_hs_you_missed_date_meta=='1'): ?>

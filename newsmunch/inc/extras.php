@@ -35,7 +35,7 @@ function newsmunch_site_slider_main() {
 					<?php if($newsmunch_hs_slider_title=='1'): newsmunch_common_post_title('h2','post-title'); endif; ?> 
 					<ul class="meta list-inline dt-mt-0 dt-mb-0 dt-mt-3">
 						<?php if($newsmunch_hs_slider_auth_meta=='1'): ?>
-							<li class="list-inline-item"><i class="far fa-user-circle"></i> <?php esc_html_e('By','newsmunch');?> <a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) ));?>"><?php esc_html(the_author()); ?></a></li>
+							<li class="list-inline-item"><i class="far fa-user-circle"></i> <?php esc_html_e('By','newsmunch');?> <a href="<?php echo esc_url(get_author_posts_url( absint(get_the_author_meta( 'ID' )) ));?>"><?php echo esc_html(get_the_author()); ?></a></li>
 						<?php endif; ?>	
 						
 						<?php if($newsmunch_hs_slider_date_meta=='1'): ?>
@@ -110,7 +110,7 @@ function newsmunch_site_slider_middle() {
 					<?php if($newsmunch_hs_slider_mdl_title=='1'): newsmunch_common_post_title('h2','post-title'); endif; ?> 
 					<ul class="meta list-inline dt-mt-0 dt-mb-0 dt-mt-3">
 						<?php if($newsmunch_hs_slider_mdl_auth_meta=='1'): ?>
-							<li class="list-inline-item"><i class="far fa-user-circle"></i> <?php esc_html_e('By','newsmunch');?> <a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) ));?>"><?php esc_html(the_author()); ?></a></li>
+							<li class="list-inline-item"><i class="far fa-user-circle"></i> <?php esc_html_e('By','newsmunch');?> <a href="<?php echo esc_url(get_author_posts_url( absint(get_the_author_meta( 'ID' )) ));?>"><?php echo esc_html(get_the_author()); ?></a></li>
 						<?php endif; ?>	
 						
 						<?php if($newsmunch_hs_slider_mdl_date_meta=='1'): ?>
@@ -555,7 +555,7 @@ endif;
 if (!function_exists('newsmunch_common_post_author')):
     function newsmunch_common_post_author()
     { ?>
-		<li class="list-inline-item"><a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) ));?>"><img src="<?php echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ) ) ); ?>" width="32" height="32" class="author" alt="<?php esc_attr(the_author()); ?>"/><?php esc_html(the_author()); ?></a></li>
+		<li class="list-inline-item"><a href="<?php echo esc_url(get_author_posts_url( absint(get_the_author_meta( 'ID' )) ));?>"><img src="<?php echo esc_url( get_avatar_url( absint(get_the_author_meta( 'ID' )) ) ); ?>" width="32" height="32" class="author" alt="<?php echo esc_attr(get_the_author()); ?>"/><?php echo esc_html(get_the_author()); ?></a></li>
    <?php }
 add_action('newsmunch_common_post_author','newsmunch_common_post_author');	
 endif;
