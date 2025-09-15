@@ -798,3 +798,11 @@ function newsmunch_top_scroller() {
 	} 
 endif;
 add_action( 'newsmunch_top_scroller', 'newsmunch_top_scroller' );
+
+add_filter( 'woocommerce_show_admin_notice', function ( $show, $notice ) {
+    if ( 'template_files' === $notice ) {
+        return false;
+    }
+
+    return $show;
+}, 10, 2 );
