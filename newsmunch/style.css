@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   NewsMunch
 Text Domain: 	   newsmunch
-Version:            1.0.79
+Version:            1.0.80
 Tested up to:       6.8
 Requires at least:  4.7
 Requires PHP:       7.0
@@ -310,4 +310,8 @@ a.wp-block-button__link:focus {
 
 .wp-block-latest-comments li a:not(:hover, :focus) {
     color: var(--dt-secondary-color);
+}
+
+.dt_footer .wp-block-latest-comments li a:not(:hover, :focus) {
+    color: #fff;
 }
