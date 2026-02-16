@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   NewsMunch
 Text Domain: 	   newsmunch
-Version:            1.0.98
+Version:            1.0.99
 Tested up to:       6.9
 Requires at least:  4.7
 Requires PHP:       7.0
@@ -371,5 +371,9 @@ a.wp-block-button__link:focus {
 }
 
 .wp-block-categories-list.has-background {
+    padding: 1rem;
+}
+
+.wp-block-latest-comments.has-background {
     padding: 1rem;
 }
