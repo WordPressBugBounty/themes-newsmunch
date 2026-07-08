@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   NewsMunch
 Text Domain: 	   newsmunch
-Version:            1.1.12
+Version:            1.1.13
 Tested up to:       7.0
 Requires at least:  4.7
 Requires PHP:       7.0
@@ -418,4 +418,8 @@ table.wc-block-cart-items .wc-block-cart-items__header th {
 
 .dt_footer .widget.widget_products ins .woocommerce-Price-amount.amount {
     color:#fff;
+}
+
+.woocommerce ul.products li.product a:focus .woocommerce-loop-product__title {
+    color: var(--dt-main-color);
 }
