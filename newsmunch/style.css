@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   NewsMunch
 Text Domain: 	   newsmunch
-Version:            1.1.27
+Version:            1.1.28
 Tested up to:       7.1
 Requires at least:  4.7
 Requires PHP:       7.0
@@ -442,4 +442,8 @@ table.wc-block-cart-items .wc-block-cart-items__header th {
 
 .wp-block-breadcrumbs li a {
     text-decoration: none;
+}
+
+.wp-block-breadcrumbs li a:not(:hover):not(:focus) {
+    color: var(--dt-secondary-color);
 }
